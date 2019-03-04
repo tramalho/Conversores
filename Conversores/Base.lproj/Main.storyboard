@@ -79,19 +79,20 @@
                                             <constraint firstItem="kWV-XL-btN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VOC-yE-hqB" secondAttribute="trailing" constant="8" symbolic="YES" id="REJ-PA-CtQ"/>
                                             <constraint firstItem="VUu-73-ppo" firstAttribute="leading" secondItem="5VS-2C-QhX" secondAttribute="leading" constant="40" id="TuS-Tc-xUq"/>
                                             <constraint firstItem="VOC-yE-hqB" firstAttribute="leading" secondItem="5VS-2C-QhX" secondAttribute="leading" constant="40" id="Xx5-mL-kVf"/>
-                                            <constraint firstAttribute="trailing" secondItem="VUu-73-ppo" secondAttribute="trailing" constant="40" id="Zwl-tF-Gb0"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VUu-73-ppo" secondAttribute="trailing" constant="20" symbolic="YES" id="Zwl-tF-Gb0"/>
                                             <constraint firstItem="kWV-XL-btN" firstAttribute="top" secondItem="VOC-yE-hqB" secondAttribute="top" id="bZv-Ay-4hz"/>
                                             <constraint firstAttribute="bottom" secondItem="VOC-yE-hqB" secondAttribute="bottom" constant="38" id="ews-nA-fOi"/>
                                             <constraint firstItem="VUu-73-ppo" firstAttribute="top" secondItem="xzA-aC-4lN" secondAttribute="bottom" constant="16" id="jno-z7-GYl"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VOC-yE-hqB" secondAttribute="trailing" constant="20" symbolic="YES" id="tp1-70-amc"/>
                                             <constraint firstItem="T5r-WK-qFl" firstAttribute="top" secondItem="xzA-aC-4lN" secondAttribute="top" id="uId-GX-anV"/>
+                                            <constraint firstItem="VUu-73-ppo" firstAttribute="centerX" secondItem="5VS-2C-QhX" secondAttribute="centerX" id="yLQ-Um-JjA"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Om-Qc-tyc">
                                         <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL0-z7-vho">
-                                                <rect key="frame" x="176.66666666666666" y="40.000000000000007" width="60.666666666666657" height="119.66666666666669"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="WL0-z7-vho">
+                                                <rect key="frame" x="40" y="40.000000000000007" width="334" height="119.66666666666669"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                                 <color key="textColor" red="0.2274509804" green="0.52156862749999999" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -108,6 +109,7 @@
                                             <constraint firstItem="WL0-z7-vho" firstAttribute="top" secondItem="9Om-Qc-tyc" secondAttribute="top" constant="40" id="QgP-XU-AE0"/>
                                             <constraint firstItem="Ucy-Pv-lQH" firstAttribute="centerX" secondItem="9Om-Qc-tyc" secondAttribute="centerX" id="eGy-OA-cmj"/>
                                             <constraint firstItem="Ucy-Pv-lQH" firstAttribute="top" secondItem="WL0-z7-vho" secondAttribute="bottom" constant="20" id="mzr-ay-DxS"/>
+                                            <constraint firstItem="WL0-z7-vho" firstAttribute="leading" secondItem="9Om-Qc-tyc" secondAttribute="leading" constant="40" id="zVc-AY-CgU"/>
                                             <constraint firstItem="WL0-z7-vho" firstAttribute="centerX" secondItem="9Om-Qc-tyc" secondAttribute="centerX" id="zo5-zq-1Bs"/>
                                         </constraints>
                                     </view>
@@ -138,6 +140,7 @@
                         <outlet property="btUnitTwo" destination="kWV-XL-btN" id="ixl-Ft-JaE"/>
                         <outlet property="lbResult" destination="WL0-z7-vho" id="KuV-kJ-OLa"/>
                         <outlet property="lbResultUnit" destination="Ucy-Pv-lQH" id="Twq-Gx-k3x"/>
+                        <outlet property="lbUnit" destination="xzA-aC-4lN" id="Ed6-IV-xks"/>
                         <outlet property="tfValue" destination="VUu-73-ppo" id="6G5-To-ckI"/>
                     </connections>
                 </viewController>
